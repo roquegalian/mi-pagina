@@ -190,3 +190,5 @@ footer {
 >>>>>>> feature/mejoras-estilos
 /* header mejorado */ 
 @media (max-width: 768px) { body { font-size: 14px; } } 
+input:valid { border: 2px solid green; } 
+input:invalid:not(:placeholder-shown) { border: 2px solid red; } 
