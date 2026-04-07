@@ -1,1 +1,82 @@
-<h2>Formulario Contacto</h2> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Roque Galian | IES Normal 6001</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="foto.jpg" alt="Foto de Roque Galian, estudiante de Análisis de Sistemas IES Normal 6001">
+        <h1>Roque Galian</h1>
+        <p>Estudiante Análisis de Sistemas | IES Normal 6001</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Volver</a></li>
+            <li><a href="index.html#intereses">Intereses</a></li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+
+    <main class="contenido">
+        <!-- CORREO + GITHUB AGREGADOS -->
+        <section id="contacto-info">
+            <h2>📧 Contactame directo</h2>
+            <p><strong>Email:</strong> <a href="mailto:roque.galian@example.com">roque.galian@example.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/roquegalian" target="_blank">github.com/roquegalian</a></p>
+        </section>
+
+        <section id="formulario">
+            <h2>Dejáme un mensaje</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}">
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required minlength="10" rows="4"></textarea>
+                </div>
+
+                <div>
+                    <label for="motivo">Motivo del contacto:</label>
+                    <select id="motivo" name="motivo">
+                        <option value="">Seleccionar opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="trabajo">Trabajo</option>
+                        <option value="proyecto">Proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="terminos">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        Acepto términos y condiciones
+                    </label>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Roque Galian - IES Normal 6001</p>
+    </footer>
+</body>
+</html>
