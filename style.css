@@ -194,3 +194,4 @@ input:valid { border: 2px solid green; }
 input:invalid:not(:placeholder-shown) { border: 2px solid red; } 
 header img { display: block; margin: 0 auto 1rem auto; max-width: 200px; } 
 @media (max-width: 768px) { body { font-size: 14px; } nav ul { flex-direction: column; } } 
+header img { display: block; margin: 0 auto; } 
