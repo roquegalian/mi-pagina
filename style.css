@@ -175,7 +175,7 @@ footer {
     margin-top: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {}
     nav ul { 
         flex-direction: column;
         align-items: center;
@@ -183,16 +183,18 @@ footer {
     }
     h1 { font-size: 2rem; }
     header img { width: 200px; height: 200px; }
-<<<<<<< HEAD
-}"/* validacion css */" 
-=======
-}"/* mejoras visuales */" 
->>>>>>> feature/mejoras-estilos
-/* header mejorado */ 
-@media (max-width: 768px) { body { font-size: 14px; } } 
-input:valid { border: 2px solid green; } 
-input:invalid:not(:placeholder-shown) { border: 2px solid red; } 
-header img { display: block; margin: 0 auto 1rem auto; max-width: 200px; } 
-@media (max-width: 768px) { body { font-size: 14px; } nav ul { flex-direction: column; } } 
-input:valid { border: 2px solid green; } 
-input:invalid { border: 2px solid red; } 
+header img { display: block; margin: 0 auto; }
+
+input:valid { border: 2px solid green; }
+input:invalid { border: 2px solid red; }
+
+@media (max-width: 768px) {} 
+    body { font-size: 14px; } 
+    header img { display: block; margin: 0 auto; }
+
+input:valid { border: 2px solid green; }
+input:invalid { border: 2px solid red; }
+
+@media (max-width: 768px) { 
+    body { font-size: 14px; } 
+}
